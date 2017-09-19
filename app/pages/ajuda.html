@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <body>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <a href="#!user"><img src="/app/img/logo_newton.png"></a>
+                    <a href="#!name"><span class ="name">Nome completo</span></a>
+                    <a href="#!email"><span class="email">E-mail</span></a>
+                </div>
+            </li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">SIEX Newton</a></li>
+            <li><a class="waves-effect" href="#!Fundadores">Ajuda</a></li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">AÇÕES DE EXTENSÃO</a></li>
+            <li><a class="waves-effect" href="#!Fundadores">Pesquisar</a></li>
+            <li><a class="waves-effect" href="#!Fundadores">Registrar ou Atualizar Ação</a></li>
+            <li><a class="waves-effect" href="#!Fundadores">Submissão - Programa de Extensão</a></li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">CONTATO SUPORTE</a></li>
+            <li><a class="waves-effect" href="#!Fundadores">Fale Conosco</a></li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">OUTRAS OPÇÕES</a></li>
+            <li>
+                <a class="waves-effect" href="#!Fundadores">
+                    <i class="material-icons left">sentiment_very_satisfied</i>Fundadores do sistema
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!Fundadores">
+                    <i class="material-icons left">close</i>Sair do Sistema
+                </a>
+            </li>
+
+        </ul>
+
+        <nav class="indigo">
+            <div class="nav-wrapper">
+                <a id="button-menu" class="btn-floating btn-large waves-effect waves-light re" data-activates="slide-out">
+                    <i class="material-icons">menu</i>
+                </a>
+                <label class="brand-logo" style="margin: 0 0 0 10px">SIEX Newton</label>
+            </div>
+        </nav>
+
+        <main>
+
+            <div class="row">
+                <div class="col s6 push-s6"><span class="flow-text">
+                    <h1>SIEX NEWTON</h1>  
+                    <div id="ajuda"  style="overflow:auto; width: 700px; height: 500px;">
+                      <h2>Tipos de Ajuda</h2>
+                        <p>
+                        Dependendo da complexidade do seu modelo de formulário e das necessidades dos usuários, você pode adicionar diferentes tipos de texto de Ajuda, utilizando vários procedimentos diferentes. Dependendo do seu modelo de formulário, é possível que você utilize mais de um tipo de texto de Ajuda no seu modelo de formulário. Apresentamos a seguir uma lista dos métodos mais comuns para exibir o texto de Ajuda no seu modelo de formulário:
+
+                        Modo de exibição da Ajuda    Crie um modo de exibição separado para mostrar o texto de Ajuda quando desejar fornecer informações detalhadas aos usuários. Você pode criar um modo de exibição da Ajuda que contenha somente o texto da Ajuda ou pode duplicar os controles adicionados no modo de exibição padrão do seu modelo de formulário e incluir o texto de Ajuda associado. Ao adicionar controles com o texto da Ajuda, você fornece um modo de exibição alternativo para preenchimento do formulário — um que contenha a Ajuda contextual para cada seção ou controle. Essa é uma abordagem útil quando o seu público for tanto de usuários novos, que precisam de assistência adicional, como usuários experientes, que já sabem como preencher o formulário.
+                    
+                        Dica : Como os modelos de formulário compatíveis com navegador não suportam os painéis de tarefas personalizados, uma boa alternativa é utilizar os modos de exibição da Ajuda para exibir o texto da Ajuda.
+                    
+                        Painel de tarefas personalizado    Um painel de tarefas personalizado é um arquivo HTML cujo conteúdo é exibido no painel de tarefas do InfoPath quando um usuário preenche um formulário. Você pode especificar somente um arquivo HTML a ser aberto no painel de tarefas personalizado padrão para o seu modelo de formulário, mas é possível adicionar arquivos HTML ao seu modelo de formulário como arquivos de recurso e, após, criar hiperlinks entre eles. Somente os arquivos HTML podem ser exibidos em painéis de tarefas personalizados. Os painéis de tarefas personalizados podem fornecer comandos específicos de formulário e conteúdo da Ajuda. Você pode adicionar um arquivo HTML diretamente ao modelo de formulário, de forma que os usuários possam visualizar a Ajuda no painel de tarefas personalizado mesmo enquanto preenchem o formulário offline ou você pode vincular o painel de tarefas personalizado ao arquivo HTML armazenado em outro local. Por exemplo, se você planeja atualizar o conteúdo da Ajuda com freqüência, mas não deseja publicar o modelo de formulário cada vez que uma atualização for efetuada no arquivo HTML de Ajuda, é uma boa opção armazenar o arquivo HTML em outro local e vinculá-lo ao painel de tarefas personalizado. Lembre-se de que os modelos de formulário compatíveis com navegador não suportam os painéis de tarefas personalizados, então você deve criar um painel de tarefas personalizado somente para os formulários que serão preenchidos no InfoPath.
+                    
+                        Formatação condicional     Você pode usar a formatação condicional para especificar opções de formatação diferentes para um controle que são baseadas em condições que ocorrem no formulário. Se as condições especificadas forem verdadeiras quando um usuário preenche um formulário, a formatação condicional é aplicada. Quando você adicionar texto de ajuda para uma seção em seu modelo de formulário e adicionar condicional formatação a seção, que um usuário Mostrar ou ocultar contextual texto de ajuda para uma seção ou controle conforme necessário, sem alternar modos de exibição. Esta é uma maneira útil para fornecer embutida ajuda para seções específicas ou controles para os usuários que desejam a Ajuda.
+                    
+                        Ajuda Externa     Você pode adicionar um link para o arquivo externo, como um arquivo HTML em um site. Por exemplo, se o site do suporte técnico de sua organização tiver uma página da Web para iniciar uma sessão de chat ao vivo com um engenheiro do suporte técnico, você pode adicionar um hiperlink ao seu modelo de formulário, o qual habilitará os usuários a abrir essa página em seus navegadores da Web. Essa abordagem é útil quando você desenvolve um modelo de formulário para outro departamento na sua organização e, no caso caso, tal departamento é mais bem qualificado para fornecer Ajuda ou suporte técnico aos usuários.
+                    
+                        Sistema de Ajuda do InfoPath para os usuários que preenchem os formulários     O InfoPath contém um sistema de Ajuda dedicado para os usuários que preenchem os formulários. Ao instruir os usuários a pressionar F1 enquanto preenchem um formulário, você os habilita a acessar os tópicos de Ajuda sobre a funcionalidade padrão do InfoPath. Use essa abordagem para formulários preenchidos pelos usuários utilizando somente o InfoPath.
+
+                        </p>  
+                    </div>
+                </span></div>
+
+                <div class="col s6 pull-s6"><span class="flow-text">
+                     <div class="collection">
+                        <a href="#!" class="collection-item active">SIEX Newton</a>
+                        <a href="#!" class="collection-item">Ajuda</a>
+                        <a href="#!" class="collection-item active">AÇÕES DE EXTENSÃO</a>
+                        <a href="#!" class="collection-item">Pesquisa</a>
+                        <a href="#!" class="collection-item">Registrar ou atuliazar ação</a>
+                        <a href="#!" class="collection-item">Submissão - Programas e Projetos</a>
+                        <a href="#!" class="collection-item active">CONTATO E SUPORTE</a>
+                        <a href="#!" class="collection-item">Fale conosco</a>
+                     </div>
+                </span></div>
+            </div>
+
+        </main>
+
+        <footer class="page-footer indigo">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Sistemas de Informação</h5>
+                        <p class="grey-text text-lighten-4">Sistema desenvolvido pelo Henrique - 6º Período - S.I.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Páginas do Curso</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/">Newton Paiva</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">Sistemas de Informação</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/odontologia">Odontologia</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/estetica-e-cosmetica">Estética</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Prova Programação Web
+                    <a class="grey-text text-lighten-4 right" href="/template.html">Topo</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#button-menu').sideNav({
+                    menuWidth: 300,
+                    edge: 'left',
+                    closeOnClick: true,
+                    OnOpen: function(el) {},
+                    onClose: function(el) {},
+                });
+            });
+        </script>
+
+    </body>
+</head>
+
+</html>
