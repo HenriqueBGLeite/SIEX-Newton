@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>SIEX Newton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,114 +14,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
     <link rel="stylesheet" href="app/css/style.css" type="text/css">
-
+</head>
     <body>
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <a href="#!user"><img src="/app/img/logo_newton.png"></a>
-                    <a href="#!name"><span class ="name">Nome completo</span></a>
-                    <a href="#!email"><span class="email">E-mail</span></a>
-                </div>
-            </li>
-            
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">SIEX Newton</a></li>
-            <li><a class="waves-effect" href="#!Fundadores">Ajuda</a></li>
-            
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">AÇÕES DE EXTENSÃO</a></li>
-            <li><a class="waves-effect" href="#!Fundadores">Pesquisar</a></li>
-            <li><a class="waves-effect" href="#!Fundadores">Registrar ou Atualizar Ação</a></li>
-            <li><a class="waves-effect" href="#!Fundadores">Submissão - Programa de Extensão</a></li>
-            
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">CONTATO SUPORTE</a></li>
-            <li><a class="waves-effect" href="#!Fundadores">Fale Conosco</a></li>
-            
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">OUTRAS OPÇÕES</a></li>
-            <li>
-                <a class="waves-effect" href="#!Fundadores">
-                    <i class="material-icons left">sentiment_very_satisfied</i>Fundadores do sistema
-                </a>
-            </li>
-            <li>
-                <a class="waves-effect" href="#!Fundadores">
-                    <i class="material-icons left">close</i>Sair do Sistema
-                </a>
-            </li>
-            
-        </ul>
+        <main id="img-newton-login">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div id="at-box-login">
+                        <div class="container" id="box-login">
+                            <img id="logo-siex-index" src="/app/img/logo-siex-black.png">
+                            <form id="formLogin" action="app/pages/principal.html" method="POST">
+                                <div class="input-field">
+                                    <i class="material-icons prefix">perm_identity</i>
+                                    <input required id="input-usuario" autofocus type="email" name="email" />
+                                    <label for="input-usuario">E-mail</label>
+                                </div>
 
-        <nav class="indigo">
-            <div class="nav-wrapper">
-                <a id="button-menu" class="btn-floating btn-large waves-effect waves-light re" data-activates="slide-out">
-                    <i class="material-icons">menu</i>
-                </a>
-                <label class="brand-logo" style="margin: 0 0 0 10px">SIEX Newton</label>
-            </div>
-        </nav>
+                                <div class="input-field">
+                                    <i class="material-icons prefix">visibility</i>
+                                    <input required id="input-usuario" type="password" name="senha" />
+                                    <label for="input-password">Senha</label>
+                                </div>
 
-        <main>
-            <div class="container">
-                <h5>Bem vindo(a) ao SIEX Newton</h5>
-                <p>Informe o e-mail e a senha de acesso</p>
-                <form id="formLogin" action="app/pages/principal.html">
-                    <div class="input-field">
-                        <i class="material-icons prefix">perm_identity</i>
-                        <input id="input-usuario" type="email" name="email" />
-                        <label for="input-usuario">E-mail (OBRIGATÓRIO)</label>
-                    </div>
-                    
-                    <div class="input-field">
-                        <i class="material-icons prefix">visibility</i>
-                        <input id="input-usuario" type="password" name="senha" />
-                        <label for="input-password">E-mail (OBRIGATÓRIO)</label>
-                    </div>
-                    
-                    <div id="div-botoes" class="row">
-                        <button class="btn waves-effect waves-light" type="reset">
+                                <div id="div-botoes" class="row">
+                                    <button class="btn waves-effect black" type="reset">
                             Limpar<i class="material-icons right">clear_all</i>
                         </button>
-                        <button class="btn waves-effect waves-light" type="submit">
+                                    <button class="btn waves-effect black" type="submit">
                             Enviar<i class="material-icons right">send</i>
                         </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
+
         </main>
 
-        <footer class="page-footer indigo">
+        <footer class="page-footer grey lighten-4">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Sistemas de Informação</h5>
-                        <p class="grey-text text-lighten-4">Sistema desenvolvido pelo Henrique - 6º Período - S.I.</p>
+                        <h5 class="black-text">Sistemas de Informação</h5>
+                        <p class="black-text text-black">Sistema desenvolvido pelo Henrique - 6º Período - S.I.</p>
                     </div>
                     <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Páginas do Curso</h5>
+                        <h5 class="black-text">Páginas do Curso</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/">Newton Paiva</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">Sistemas de Informação</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/odontologia">Odontologia</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/estetica-e-cosmetica">Estética</a></li>
+                            <li><a class="black-text text-black" href="https://www.newtonpaiva.br/">Newton Paiva</a></li>
+                            <li><a class="black-text text-black" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">Sistemas de Informação</a></li>
+                            <!--<li><a class="black-text text-black" href="https://www.newtonpaiva.br/graduacao/odontologia">Odontologia</a></li>-->
+                            <!--<li><a class="black-text text-black" href="https://www.newtonpaiva.br/graduacao/estetica-e-cosmetica">Estética</a></li>-->
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container">
+            <div class="footer-copyright ">
+                <div class="container black-text text-black ">
                     © 2017 Prova Programação Web
-                    <a class="grey-text text-lighten-4 right" href="/template.html">Topo</a>
+                    <!--<a class="black-text text-black right" href="/template.html">Topo</a>-->
                 </div>
             </div>
         </footer>
@@ -143,6 +95,4 @@
         </script>
 
     </body>
-</head>
-
 </html>

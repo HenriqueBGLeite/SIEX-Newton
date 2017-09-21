@@ -1,9 +1,119 @@
  body {
-     display: flex;
-     min-height: 100vh;
-     flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
  }
 
  main {
-     flex: 1 0 auto;
+  flex: 1 0 auto;
  }
+
+ .fixo {
+  position: fixed;
+  z-index: 100;
+ }
+
+ .topo {
+  background-color: #002D40;
+ }
+
+.title-pg{
+ margin-bottom:50px;
+ margin-left:-70px;
+ font-size:20pt;
+ background-color:rgba(255,189,0,0.6);
+ border-radius:5px;
+ display:inline-block;
+ padding:0px 7px 0px 7px;
+ text-align:center;
+ border:1px solid #FFBD00;
+}
+
+footer{
+ border-top:1px solid #CCCCCC;
+}
+ /*INDEX.HTML*/
+
+ #box-login {
+  margin-top: 6%;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 1px 2px 3px #333333;
+  border-radius: 7px;
+  height: auto;
+  overflow: hidden;
+ }
+
+
+ #img-newton-login {
+  background-image: url("../../../app/img/fundo-index.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*box-shadow: inset 50px 50px 1000px 30px #000000;*/
+ }
+
+ #div-botoes {
+  float: right;
+ }
+
+
+ @media screen and (max-width:600px) {
+  #box-login {
+   margin: 0;
+   margin-top: 5%;
+   width: 100%;
+   height: 100%;
+   border-radius: 0;
+  }
+ }
+
+ #logo-siex-index {
+  width: 190px;
+  height: 40px;
+ }
+
+ .picker__date-display,
+ .picker__weekday-display {
+  background-color: #002D40;
+ }
+
+ #conteudo-busca {
+  width: 100%;
+  padding-top: 50px;
+  margin: auto;
+ }
+
+ /*PRINCIPAL.HTML*/
+
+ #button-menu {
+  margin: 5px;
+  background-color: #E54661;
+ }
+
+ #logo-siex-principal {
+  width: 190px;
+  height: 40px;
+  margin: 12px 0px 0px 20px;
+ }
+
+
+
+ #container-pesquisar, #container-fale-conosco,#container-principal  {
+  margin: auto;
+  margin-top: 80px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 1px #CCCCCC;
+  background-color: #FFFFFF;
+  width: 90%;
+ }
+ 
+ #container-fale-conosco{
+  width:40%;
+ }
+ 
+ 
